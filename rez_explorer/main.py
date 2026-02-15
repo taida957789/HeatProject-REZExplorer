@@ -8,10 +8,7 @@ import os
 import sys
 import time
 
-# Add parent directory so we can import rez_parser
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-
-from rez_parser import (
+from .rez_parser import (
     RezParser, RezHeader, RezDirEntry, RezFileEntry,
     decrypt_file_data, decrypt_xor_cyclic, decrypt_dir_name, decrypt_file_name,
     DIR_HEADER_KEY, FILE_HEADER_KEY, BYTE_TABLE, EXT_TABLE,

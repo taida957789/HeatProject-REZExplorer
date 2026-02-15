@@ -17,23 +17,29 @@ Built for **Heat Project** (韓國線上賽車遊戲), but should work with othe
 - **New Folder / Rename** — Right-click directory tree to manage folders
 - **Save As** — Write modified archive back to REZ format with proper encryption
 
-## Requirements
+## Install
 
-- Python 3.10+
-- PySide6
-
+```bash
+pip install .
 ```
-pip install PySide6
+
+Or in development mode:
+
+```bash
+pip install -e .
 ```
 
 ## Usage
 
 ```bash
 # Launch GUI
-python main.py
+rez-explorer
+
+# Or run as module
+python -m rez_explorer
 
 # Open a REZ file directly
-python main.py path/to/file.rez
+rez-explorer path/to/file.rez
 ```
 
 ### Browsing
@@ -60,8 +66,6 @@ REZ is LithTech's custom resource archive format:
 - 202-byte header with magic validation
 - Encrypted directory tree (XOR-based)
 - Optional file data encryption (extended 513-byte XOR table)
-
-Requires `rez_parser.py` in the parent directory for parsing/encryption logic.
 
 ## Known REZ Files (Heat Project)
 

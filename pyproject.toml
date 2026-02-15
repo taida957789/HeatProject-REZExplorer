@@ -1,0 +1,17 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "rez-explorer"
+version = "0.1.0"
+description = "PySide6 GUI for browsing and editing LithTech REZ archive files"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+dependencies = [
+    "PySide6>=6.5",
+]
+
+[project.scripts]
+rez-explorer = "rez_explorer.main:main"
