@@ -2,7 +2,7 @@
 
 PySide6 GUI for browsing and editing LithTech REZ archive files.
 
-Built for **Heat Project** (韓國線上賽車遊戲), but should work with other LithTech Jupiter engine REZ files.
+Built for **Heat Project** (韓國線上FPS遊戲，火線特戰隊), but should work with other LithTech Jupiter engine REZ files.
 
 ![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue)
 ![PySide6](https://img.shields.io/badge/GUI-PySide6-green)
